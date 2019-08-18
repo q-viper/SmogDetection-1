@@ -82,6 +82,19 @@ https://github.com/SayedMaheen/PlanetEarth </br>
 https://github.com/ingus-t/SmogDetection </br>
 https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
+****************************************************************************************************************************************
+
+Check out this exclusive web-app we have created for our project at https://smog4000.onrender.com/. At this site, you can upload your Smog/Clear images and test the accuracy of our classification system. 
+
+##Screenshots from the User Interface:
+
+**'Smog' Detection**
+
+![](screenshots/Capture.png)
+
+**'Clear' Detection**
+
+![](screenshots/Capture1.png)
 
 ****************************************************************************************************************************************
 ## PART 2: TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
