@@ -1,4 +1,4 @@
-#**Smog Detection Project**
+##**Smog Detection Project**
 ****************************************************************************************************************************************
 
 **A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
@@ -85,7 +85,7 @@ https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ****************************************************************************************************************************************
-**Part 2:Technical Summary:**
+##**Part 2:Technical Summary:**
 ****************************************************************************************************************************************
 
 # This is a descriptive summary of Model Architechture we have implemented, and the Data Augmentations we have applied.
