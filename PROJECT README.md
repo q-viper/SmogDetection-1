@@ -1,7 +1,9 @@
-# Smog Detection
+# Smog Detection Project
+****************************************************************************************************************************************
 
-**#sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
+**A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
 
+________________________________________________________________________________________________________________________________________
 <ins>Description:</ins></br>
 Smog Detection project has been created as a collaborative team effort between 
 Facebook Secure and Private AI Scholars. Main focus of the project is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more. Currently our team is focusing on Smog and Fog Highway detection.</br></br> 
