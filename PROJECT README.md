@@ -4,7 +4,7 @@
 **A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
 
 ________________________________________________________________________________________________________________________________________
-## PART 1:PROJECT SUMMARY-
+## PART 1: PROJECT SUMMARY-
 ________________________________________________________________________________________________________________________________________
 
 <ins>Description:</ins></br>
@@ -84,7 +84,7 @@ https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ****************************************************************************************************************************************
-## PART 2:TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
+## PART 2: TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
 ****************************************************************************************************************************************
 
 ## This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
@@ -178,7 +178,7 @@ Accuracy: 99.0000
 Test Accuracy (Overall): 98% (767/775)
 
 ****************************************************************************************************************************************
-## PART 3:TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
+## PART 3: TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
 ****************************************************************************************************************************************
 
 ## Description
