@@ -4,7 +4,7 @@
 **A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
 
 ________________________________________________________________________________________________________________________________________
-**PART 1:PROJECT SUMMARY:**
+## PART 1:PROJECT SUMMARY:
 ________________________________________________________________________________________________________________________________________
 
 <ins>Description:</ins></br>
@@ -22,7 +22,7 @@ In any practical situation, there are other components that need to be taken int
 <ins>Our approach:</ins></br>
 There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main cathegories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br></br>   
 
-<ins>Project objective</ins></br> :
+<ins>Project objective:</ins></br> 
 Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads. The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cams, so that the vehicle can automatically be alerted about smog on the roads/streets (highways) be it in heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert the vehicle / driver.</br></br>  
 
 <ins>Dataset:</ins></br> 
@@ -88,7 +88,7 @@ https://github.com/SayedMaheen/sg_PlanetEarth </br>
 ## PART 2:TECHNICAL SUMMARY:
 ****************************************************************************************************************************************
 
-# This is a descriptive summary of Model Architechture we have implemented, and the Data Augmentations we have applied.
+## This is a descriptive summary of Model Architechture we have implemented, and the Data Augmentations we have applied.
 
 ## Input to model : 
 > Images captured by traffic cam.
@@ -177,7 +177,7 @@ Accuracy: 99.0000
 Test Accuracy (Overall): 98% (767/775)
 
 ****************************************************************************************************************************************
-**Summary of Implementation with Keras:**
+## PART 3:TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
 ****************************************************************************************************************************************
 
 ## Description
