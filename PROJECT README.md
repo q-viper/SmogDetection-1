@@ -84,7 +84,7 @@ https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
 ****************************************************************************************************************************************
 
-Check out this exclusive web-app we have created for our project at https://smog4000.onrender.com/. At this site, you can upload your Smog/Clear images and test the accuracy of our classification system. 
+**_Check out this exclusive web-app we have deployed for our project at https://smog4000.onrender.com/. At this site, you can upload your Smog/Clear images and test the accuracy of our classification system._**
 
 ## Screenshots from the User Interface:
 
