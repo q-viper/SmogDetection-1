@@ -1,10 +1,10 @@
-##**Smog Detection Project**
+## Smog Detection Project
 ****************************************************************************************************************************************
 
 **A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
 
 ________________________________________________________________________________________________________________________________________
-**Part 1:Project Summary:**
+**PART 1:PROJECT SUMMARY:**
 ________________________________________________________________________________________________________________________________________
 
 <ins>Description:</ins></br>
@@ -54,7 +54,7 @@ To detect and remove duplicates (regardless of format and resolution), we were u
 9. @sourav kumar
 10. @George Christopoulos
 11. @Sayed Maheen Basheer
-12. @Abnishek Lalwani
+12. @Abhishek Lalwani
 13. @LauraT
 
 
@@ -85,7 +85,7 @@ https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ****************************************************************************************************************************************
-##**Part 2:Technical Summary:**
+## PART 2:TECHNICAL SUMMARY:
 ****************************************************************************************************************************************
 
 # This is a descriptive summary of Model Architechture we have implemented, and the Data Augmentations we have applied.
