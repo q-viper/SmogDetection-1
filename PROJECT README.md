@@ -4,7 +4,7 @@
 **A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
 
 ________________________________________________________________________________________________________________________________________
-## PART 1:PROJECT SUMMARY:
+## PART 1:PROJECT SUMMARY-
 ________________________________________________________________________________________________________________________________________
 
 <ins>Description:</ins></br>
@@ -84,10 +84,10 @@ https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ****************************************************************************************************************************************
-## PART 2:TECHNICAL SUMMARY:
+## PART 2:TECHNICAL SUMMARY-
 ****************************************************************************************************************************************
 
-## This is a descriptive summary of Model Architechture we have implemented, and the Data Augmentations we have applied.
+## This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
 
 ## Input to model : 
 > Images captured by traffic cam.
@@ -236,4 +236,4 @@ The Final block is for linear layers. It has:
 * Usage of less parameters
 * Test with different optimizer and loss functions
 
-## Find the Pytorch code for this project [here](https://github.com/souravs17031999/SmogDetection). 
+## Find the Pytorch code for this project [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
