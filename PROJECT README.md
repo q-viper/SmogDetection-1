@@ -92,6 +92,8 @@ Check out this exclusive web-app we have created for our project at https://smog
 
 ![](screenshots/Capture.JPG)
 
+________________________________________________________________________________________________________________________________________
+
 **'Clear' Detection**
 
 ![](screenshots/Capture1.JPG)
