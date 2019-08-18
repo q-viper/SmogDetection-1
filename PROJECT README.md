@@ -178,6 +178,13 @@ Accuracy: 99.0000
 Test Accuracy (Overall): 98% (767/775)
 
 ****************************************************************************************************************************************
+We have decided to create a user-friendly web app so everyone can test and experiment with our project. We hope that this will be useful for any road-alerts related project that may require such a smog detection/classification facility. 
+
+**Screenshots from the UI:**
+
+
+## Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection)
+****************************************************************************************************************************************
 ## PART 3: TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
 ****************************************************************************************************************************************
 
@@ -236,4 +243,4 @@ The Final block is for linear layers. It has:
 * Usage of less parameters
 * Test with different optimizer and loss functions
 
-## Find the Pytorch code for this project [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
+## Find the notebook for this implementation [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
