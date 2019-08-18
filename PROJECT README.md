@@ -1,4 +1,4 @@
-**Smog Detection Project**
+#**Smog Detection Project**
 ****************************************************************************************************************************************
 
 **A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
