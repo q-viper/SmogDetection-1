@@ -84,7 +84,7 @@ https://github.com/ingus-t/SmogDetectionCombined </br>
 https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ****************************************************************************************************************************************
-## PART 2:TECHNICAL SUMMARY(FINAL PROJECT IMPLEMENTATION WITH PYTORCH)-
+## PART 2:TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
 ****************************************************************************************************************************************
 
 ## This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
