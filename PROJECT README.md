@@ -1,46 +1,43 @@
-## Smog Detection Project
-****************************************************************************************************************************************
+# Smog Detection Project
 
-**A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)**
+A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)
 
-________________________________________________________________________________________________________________________________________
 ## PART 1: PROJECT SUMMARY-
-________________________________________________________________________________________________________________________________________
 
 <ins>Description:</ins></br>
 Smog Detection project has been created as a collaborative team effort between 
-Facebook Secure and Private AI Scholars on #sg_planetearth. Main focus of the project is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently our team is focusing on Smog and Fog detection on highways.</br></br> 
+Facebook Secure and Private AI Scholars on #sg_planetearth. Main focus of the group is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently our team is focusing on Smog and Fog detection on highways.</br>
 
 <ins>Why is it important? Why should we care?</ins></br>
-Sudden appearance of smog and/or fog on the highway more often than not cause serious and sometimes fatal accidents. Smog is a main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br></br>  
+Sudden appearance of smog and/or fog on the highway more often than not cause serious and sometimes fatal accidents. Smog is a main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br> 
 
 <ins>Solution:</ins></br>
-Monitoring, early smog detection and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send notification in a timely manner. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br></br>  
+Monitoring, early smog detection and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send notification in a timely manner. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br>
 
-In any practical situation, there are other components that need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block camera view. To identify the range of vision sensors need to be added to the solution.</br></br>  
+In any practical situation, there are other components that need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block camera view. To identify the range of vision sensors need to be added to the solution.</br>
 
 <ins>Our approach:</ins></br>
-There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main cathegories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br></br>   
+There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main cathegories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br>
 
 <ins>Project objective:</ins></br> 
-Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads. The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cams, so that the vehicle can automatically be alerted about smog on the roads/streets (highways) be it in heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert the vehicle / driver.</br></br>  
+Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads. The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cams, so that the vehicle can automatically be alerted about smog on the roads/streets (highways) be it in heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert the vehicle / driver.</br> 
 
 <ins>Dataset:</ins></br> 
-Since inception, people in the group have taken their task most seriously. They contributed towards building unique dataset which now has more than 4,000 images divided evenly between above-mentioned two groups. Our collection consists of:</br></br> 
+Since inception, people in the group have taken their task most seriously. They contributed towards building unique dataset which now has more than 4,000 images divided evenly between above-mentioned two groups. Our collection consists of:</br>
 ![DataSet1](https://user-images.githubusercontent.com/7014697/63082087-25652d80-befa-11e9-9ccd-f49b5476010f.JPG)
 ![DataSet2](https://user-images.githubusercontent.com/7014697/63082090-272ef100-befa-11e9-8d7a-2296e22aa7c3.JPG)
 
-<ins>Rules and regulations for selecting picture:</ins>
-- Only Highway(street)
+<ins>Rules and regulations for selecting pictures:</ins>
+- Only Highways or streets
 - Avoid large quantity of people
-- Avoid accident
-- Avoid Night Picture
-- Avoid bird eye view
-- Avoid large copyright watermark picture
-- Acceptable image format jpg, jpeg, png, jfif, webp</br></br>
+- Avoid traffic accidents
+- Avoid night pictures
+- Avoid bird's-eye view
+- Avoid images that are copyrighted or have a watermark
+- Acceptable image formats: jpg, jpeg, png, jfif, webp</br>
 
-If in doubt about synthetic picture we were using https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/ </br>
-To detect and remove duplicates (regardless of format and resolution), we were using https://dupeguru.voltaicideas.net/ It's a nice and simple an Open Source tool that will work cross different platforms (Linux, OS X, Windows).</br></br> 
+* If in doubt about synthetic picture we were using [https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) </br>
+* To detect and remove duplicates (regardless of format and resolution), we were using [https://dupeguru.voltaicideas.net/](https://dupeguru.voltaicideas.net/) It's a nice and simple an Open Source tool that will work cross different platforms (Linux, OS X, Windows).</br>
 
 <ins>Contributors:</ins></br> 
 1. @Shudipto Trafder
@@ -92,24 +89,23 @@ https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ![](screenshots/Capture.JPG)
 
-________________________________________________________________________________________________________________________________________
+
 
 **'Clear' Detection**
 
 ![](screenshots/Capture1.JPG)
 
-****************************************************************************************************************************************
+
 ## PART 2: TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
-****************************************************************************************************************************************
 
-## This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
+This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
 
-## Input to model : 
-> Images captured by traffic cam.
-## Output from model : 
+**Input to model:**
+> Images captured by traffic cameras.
+**Output from model :** 
 > Prediction as label '0'(clear view) or '1'(smog detected).
 
-## Data Augmentations and Transformations
+### Data Augmentations and Transformations
 
 * [transforms.RandomRotation(30),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomRotation)
   [transforms.RandomHorizontalFlip(),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomHorizontalFlip)
@@ -120,11 +116,11 @@ ________________________________________________________________________________
   [transforms.Normalize([0.485, 0.456, 0.406],
                       [0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
         
-## Model name 
+### Model name 
 * [planetEarch_improved.pt](https://www.kaggleusercontent.com/kf/18699045/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..NX3MZVkixkhASIBsP-e0uA.SplTd0njipbzC_x4mF-HsOJiU8ca2ycipZNQ_dxpuzJfhezWWHeE7BGL0JnQ1Ni8xh3YmdWUNubsC-pYVTr20wMeCYV-2Paqe4OvtPCNzpXuAHX23oQF-d5YK6x7ruPPm-7vBTCHvKGQzDW9ZuMXPg.FT_NpgWhdVu3GQnSQzaCJQ/planetEarch_improved.pt)
 
-## Description of model 
-So, there are five modules which contain deeper sublayers.
+### Description of model 
+There are five modules which contain deeper sublayers.
 Let's go through them one by one:
 
 * CNN layers : 7 
@@ -155,17 +151,17 @@ Let's go through them one by one:
 > fc :
 * Linear layers : Linear(256, 128), Linear(128, 2)
 
-## Dropout has been applied in conv4 and linear layer where probability = 0.35 in conv4 and 0.5 in fc.
+**Dropout has been applied in conv4 and linear layer where probability = 0.35 in conv4 and 0.5 in fc.**
 
-## Activation functions : 
-[mila](https://github.com/digantamisra98/Mish/blob/master/Mish/Torch/mish.py) activation has been used.
+###Activation functions:
+[mish](https://github.com/digantamisra98/Mish/blob/master/Mish/Torch/mish.py) activation has been used.
 Activation Mila (@Diganta's new activation)
-https://github.com/digantamisra98/Mila
+[mila](https://github.com/digantamisra98/Mila)
 
-## Optimizer : 
+### Optimizer : 
 [Adam](https://pytorch.org/docs/stable/_modules/torch/optim/adam.html) optimizer is used here.
 
-## Loss function : 
+### Loss function : 
 [CrossEntropyLoss](https://pytorch.org/docs/stable/_modules/torch/nn/modules/loss.html) is used.
 
 ## Learning rate (with lr scheduler) :
@@ -175,49 +171,46 @@ https://github.com/digantamisra98/Mila
 ## Epochs : 
 epoch : 50
 
-****************************************************************************************************************************************
-# RESULTS
-****************************************************************************************************************************************
 
-## Test loss :
+## RESULTS
+
+
+### Test loss :
 Test Loss:36.734721 
 
-## Test Accuracy :
+### Test Accuracy :
 Accuracy: 99.0000
 
-## Class wise loss :
+### Class wise loss :
 * Test Accuracy of     0: 98% (389/393)
 * Test Accuracy of     1: 98% (378/382)
 
-## Overall testing accuracy : 
+### Overall testing accuracy : 
 Test Accuracy (Overall): 98% (767/775)
 
-****************************************************************************************************************************************
 We have decided to create a user-friendly web app so everyone can test and experiment with our project. We hope that this will be useful for any road-alerts related project that may require such a smog detection/classification facility. 
 
 **Screenshots from the UI:**
 
+Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection)
 
-## Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection)
-****************************************************************************************************************************************
 ## PART 3: TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
-****************************************************************************************************************************************
 
-## Description
+### Description
 * Libraries used: keras 2.2.4, numpy, matplotlib etc
 * Trained: On google Colab
 * Dataset Used: Smog4000 
 
-## About dataset:
+### About dataset:
 Smog4000 dataset created by our team. 
 
-## Preprocessing of data
+### Preprocessing of data
 * Rescale range: 1./255
 * shear and zoom: 0.2
 * color: RGB
 * Outshape: 224 X 224
 
-## About the model
+### About the model
 Custom CNN model is used here. Complete summary of model architecture is given below:
 <img src = 'https://github.com/q-viper/SmogDetection/blob/master/Smog4000/Assets/model.JPG'>
 <br/>
@@ -238,24 +231,23 @@ The Final block is for linear layers. It has:
 
 * Total parameters: 1,469,346
 
-## Model Compilation
+### Model Compilation
 * Optimizer: Adam(Adaptive Momentum) Optimizer is used on this model.
 * Learning rate: default(0.001)
 * Loss function: Categorical_crossentropy (categories: clear, smog)
 
-## Training
+### Training
 * Epochs:  10
 * Batch Size: 32
 
-
-## Performance
+### Performance
 * Train Accuracy: 0.9968
 * Validation Accuracy: 0.9921
 * Test Accuracy: 0.985
 * Train time: 750s per epochs
 
-## Future Implementations:
+### Future Implementations:
 * Usage of less parameters
 * Test with different optimizer and loss functions
 
-## Find the notebook for this implementation [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
+### Find the notebook for this implementation [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
