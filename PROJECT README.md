@@ -1,7 +1,7 @@
 # Smog Detection Project
 
 A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
-Web app that displays our model in action can be seen here: [https://smog4000.onrender.com/](https://smog4000.onrender.com/)
+**_Check out our  web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._**
 ___
 ## Part 1: Project summary
 
@@ -60,10 +60,6 @@ No | Name | Slack Handle
 12 | Abhishek Lalwani | @Abhishek Lalwani
 13 | Laura Truncellito | @LauraT
 
-### UPDATES
-
-**_Check out our  web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._**
-
 ## Screenshots from the User Interface:
 
 **'Smog' Detection**  
@@ -80,7 +76,7 @@ This is a descriptive summary of Model Architecture we have implemented, and the
 **Input to model:**  
 Images captured by traffic cameras.  
 **Output from model :**  
-> Prediction as label '0'(clear view) or '1'(smog detected).
+Prediction as label '0'(clear view) or '1'(smog detected).
 
 ### Data Augmentations and Transformations
 
@@ -212,10 +208,10 @@ The Final block is for linear layers. It has:
 * Batch Size: 32
 
 ### Performance
-* Train Accuracy: 0.9968
-* Validation Accuracy: 0.9921
-* Test Accuracy: 0.985
-* Train time: 750s per epochs
+* Train Accuracy: 0.9968%
+* Validation Accuracy: 0.9921%
+* Test Accuracy: 0.985%
+* Train time: 750 seconds per epoch
 
 ### Future Implementations:
 * Usage of less parameters
