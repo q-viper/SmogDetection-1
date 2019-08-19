@@ -4,30 +4,30 @@ A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challen
 
 ## PART 1: PROJECT SUMMARY-
 
-<ins>Description:</ins></br>
+### Description:
 Smog Detection project has been created as a collaborative team effort between 
 Facebook Secure and Private AI Scholars on #sg_planetearth. Main focus of the group is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently our team is focusing on Smog and Fog detection on highways.</br>
 
-<ins>Why is it important? Why should we care?</ins></br>
+### Why is it important? Why should we care?
 Sudden appearance of smog and/or fog on the highway more often than not cause serious and sometimes fatal accidents. Smog is a main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br> 
 
-<ins>Solution:</ins></br>
+### Solution:
 Monitoring, early smog detection and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send notification in a timely manner. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br>
 
 In any practical situation, there are other components that need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block camera view. To identify the range of vision sensors need to be added to the solution.</br>
 
-<ins>Our approach:</ins></br>
+### Our approach:
 There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main cathegories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br>
 
-<ins>Project objective:</ins></br> 
+### Project objective:
 Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads. The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cams, so that the vehicle can automatically be alerted about smog on the roads/streets (highways) be it in heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert the vehicle / driver.</br> 
 
-<ins>Dataset:</ins></br> 
+### Dataset:
 Since inception, people in the group have taken their task most seriously. They contributed towards building unique dataset which now has more than 4,000 images divided evenly between above-mentioned two groups. Our collection consists of:</br>
 ![DataSet1](https://user-images.githubusercontent.com/7014697/63082087-25652d80-befa-11e9-9ccd-f49b5476010f.JPG)
 ![DataSet2](https://user-images.githubusercontent.com/7014697/63082090-272ef100-befa-11e9-8d7a-2296e22aa7c3.JPG)
 
-<ins>Rules and regulations for selecting pictures:</ins>
+### Rules and regulations for selecting pictures:
 - Only Highways or streets
 - Avoid large quantity of people
 - Avoid traffic accidents
@@ -36,10 +36,10 @@ Since inception, people in the group have taken their task most seriously. They 
 - Avoid images that are copyrighted or have a watermark
 - Acceptable image formats: jpg, jpeg, png, jfif, webp</br>
 
-* If in doubt about synthetic picture we were using [https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) </br>
-* To detect and remove duplicates (regardless of format and resolution), we were using [https://dupeguru.voltaicideas.net/](https://dupeguru.voltaicideas.net/) It's a nice and simple an Open Source tool that will work cross different platforms (Linux, OS X, Windows).</br>
+* Synthetic we used were taken from [https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) </br>
+* To detect and remove duplicates (regardless of format and resolution), we were using [https://dupeguru.voltaicideas.net/](https://dupeguru.voltaicideas.net/). It is a nice and simplen Open Source tool that works across different platforms (Linux, OS X, Windows).</br>
 
-<ins>Contributors:</ins></br> 
+### Contributors:
 1. @Shudipto Trafder
 2. @Berenice
 3. @Agata [OR, USA]
@@ -128,27 +128,27 @@ Let's go through them one by one:
 * Pooling layers : 4
 * Batch normalization layers : 7
 
-> conv1 :
+**conv1 :**
 * CNN layers : Conv2d(3, 32, 3, padding=1), Conv2d(32, 32, 3, stride=2, padding=1)
 * Pooling layer : MaxPool2d(2, 2)
 * Batch normalization layer : BatchNorm2d(32), nn.BatchNorm2d(32),
 
-> conv2 : 
+**conv2 :**
 * CNN layers : Conv2d(32, 64, 3, padding=1), Conv2d(64, 64, 3, stride=2, padding=1)
 * Pooling layer : MaxPool2d(2, 2)
 * Batch normalization layer : BatchNorm2d(32), nn.BatchNorm2d(64),
 
-> conv3 :
+**conv3 :**
 * CNN layers : Conv2d(64, 128, 3, padding=1), Conv2d(128, 128, 3, stride=2, padding=1)
 * Pooling layer : MaxPool2d(2, 2)
 * Batch normalization layer : BatchNorm2d(128), BatchNorm2d(128)
 
-> conv4 :
+**conv4 :**
 * CNN layers : Conv2d(128, 256, 3, padding=1)
 * Pooling layer : MaxPool2d(2, 2)
 * Batch normalization layer : BatchNorm2d(256)
 
-> fc :
+**fc :**
 * Linear layers : Linear(256, 128), Linear(128, 2)
 
 **Dropout has been applied in conv4 and linear layer where probability = 0.35 in conv4 and 0.5 in fc.**
