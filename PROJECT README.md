@@ -2,7 +2,6 @@
 
 A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
 Web app that displays our model in action can be seen here: [https://smog4000.onrender.com/](https://smog4000.onrender.com/)
-
 ___
 ## Part 1: Project summary
 
@@ -44,48 +43,26 @@ Notes:
 - To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is a simple open source tool for duplicate detection that works across different platforms (Linux, OS X, Windows).
 
 ### Contributors:
-1. @Shudipto Trafder
-2. @Berenice
-3. @Agata [OR, USA]
-4. @Ingus Terbets
-5. @Akash Antony
-6. @Alexander Villasoto
-7. @Pooja Vinod
-8. @Viper
-9. @sourav kumar
-10. @George Christopoulos
-11. @Sayed Maheen Basheer
-12. @Abhishek Lalwani
-13. @LauraT
 
+No | Name | Slack Handle 
+--- | --- | ---
+1 | Shudipto Trafder | @Shudipto Trafder
+2 | Berenice Terwey | @Berenice
+3 | Agata Gruza | @Agata [OR, USA]
+4 | Ingus Terbets | @Ingus Terbets
+5 | Akash Antony | @Akash Antony
+6 | Alexander Villasoto | @Alexander Villasoto
+7 | Pooja Vinod | @Pooja Vinod
+8 | Ramkrishna Acharya | @Viper
+9 | Sourav Kumar | @sourav kumar
+10 | George Christopoulos | @George Christopoulos
+11 | Sayed Maheen Basheer | @Sayed Maheen Basheer
+12 | Abhishek Lalwani | @Abhishek Lalwani
+13 | Laura Truncellito | @LauraT
 
 ### UPDATES
 
-| Date          | Contribution  | 
-| ------------- |:-------------:|
-|08/05/19       | 13th batch of images uploaded (20 for Clear and 20 for Smog folder)    |
-|08/04/19       | 12th batch of images uploaded (20 for Clear and 20 for Smog folder)    |
-|08/03/19       | 11th batch of images uploaded (20 for Clear and 20 for Smog folder)    |
-|08/02/19       | 10th batch of images uploaded (20 for Clear and 20 for Smog folder)    |
-|08/01/19       | 9th batch of images uploaded (20 for Clear and 20 for Smog folder)     |
-|07/31/19       | 8th batch of images uploaded (20 for Clear and 20 for Smog folder)     |
-|07/30/19       | 7th batch of images uploaded (20 for Clear and 20 for Smog folder)     |
-|07/29/19       | 6th batch of images uploaded (20 for Clear and 20 for Smog folder)     | 
-|07/28/19       | 5th batch of images uploaded (20 for Clear and 20 for Smog folder)     |  
-|07/27/19       | 4th batch of images uploaded (20 for Clear and 20 for Smog folder)     |
-|07/26/19       | 3rd batch of images uploaded (20 for Clear and 20 for Smog folder)     | 
-|07/25/19       | 2nd batch of images uploaded (20 for Clear and 20 for Smog folder)     |   
-|07/24/19       | 1st batch of images uploaded (20 for Clear and 20 for Smog folder)     | 
-
-**More information about our data gathering process:**  
-https://github.com/SayedMaheen/SmogDetection   
-https://github.com/SayedMaheen/PlanetEarth  
-https://github.com/ingus-t/SmogDetection  
-https://github.com/ingus-t/SmogDetectionCombined  
-https://github.com/SayedMaheen/sg_PlanetEarth  
-****************************************************************************************************************************************
-
-**_Check out this exclusive web-app we have deployed for our project at https://smog4000.onrender.com/. At this site, you can upload your Smog/Clear images and test the accuracy of our classification system._**
+**_Check out our  web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._**
 
 ## Screenshots from the User Interface:
 
@@ -94,7 +71,6 @@ https://github.com/SayedMaheen/sg_PlanetEarth
 
 **'Clear' Detection**  
 ![](screenshots/Capture1.JPG)
-
 ___
 # Part 2: Implementation with PyTorch
 
@@ -109,13 +85,12 @@ Images captured by traffic cameras.
 ### Data Augmentations and Transformations
 
 * [transforms.RandomRotation(30),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomRotation)
-  [transforms.RandomHorizontalFlip(),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomHorizontalFlip)
-  [transforms.Resize(256),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Resize)
-  [transforms.ColorJitter(0.1),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#ColorJitter)
-  [transforms.CenterCrop(224),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#CenterCrop)
-  [transforms.ToTensor(),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#ToTensor)
-  [transforms.Normalize([0.485, 0.456, 0.406],
-                      [0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
+* [transforms.RandomHorizontalFlip(),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#RandomHorizontalFlip)
+* [transforms.Resize(256),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Resize)
+* [transforms.ColorJitter(0.1),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#ColorJitter)
+* [transforms.CenterCrop(224),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#CenterCrop)
+* [transforms.ToTensor(),](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#ToTensor)
+* [transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
         
 ### Model name 
 * [planetEarch_improved.pt](https://www.kaggleusercontent.com/kf/18699045/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..NX3MZVkixkhASIBsP-e0uA.SplTd0njipbzC_x4mF-HsOJiU8ca2ycipZNQ_dxpuzJfhezWWHeE7BGL0JnQ1Ni8xh3YmdWUNubsC-pYVTr20wMeCYV-2Paqe4OvtPCNzpXuAHX23oQF-d5YK6x7ruPPm-7vBTCHvKGQzDW9ZuMXPg.FT_NpgWhdVu3GQnSQzaCJQ/planetEarch_improved.pt)
