@@ -1,6 +1,6 @@
 # Smog Detection Project
 
-A project by #sg_planetearth (Facebook Secure and Private AI Scholarship Challenge 2019)
+A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.
 
 ## PART 1: PROJECT SUMMARY-
 
@@ -36,7 +36,7 @@ Since inception, people in the group have taken their task most seriously. They 
 - Avoid images that are copyrighted or have a watermark
 - Acceptable image formats: jpg, jpeg, png, jfif, webp</br>
 
-* Synthetic we used were taken from [https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) </br>
+* Synthetic images we used were taken from [https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) </br>
 * To detect and remove duplicates (regardless of format and resolution), we were using [https://dupeguru.voltaicideas.net/](https://dupeguru.voltaicideas.net/). It is a nice and simplen Open Source tool that works across different platforms (Linux, OS X, Windows).</br>
 
 ### Contributors:
@@ -55,7 +55,7 @@ Since inception, people in the group have taken their task most seriously. They 
 13. @LauraT
 
 
-__UPDATES:__
+### UPDATES
 
 | Date          | Contribution  | 
 | ------------- |:-------------:|
@@ -73,7 +73,7 @@ __UPDATES:__
 |07/25/19       | 2nd batch of images uploaded (20 for Clear and 20 for Smog folder)     |   
 |07/24/19       | 1st batch of images uploaded (20 for Clear and 20 for Smog folder)     | 
 
-<ins>More info:</ins></br> 
+**More information about our data gathering process:**
 https://github.com/SayedMaheen/SmogDetection</br> 
 https://github.com/SayedMaheen/PlanetEarth </br>
 https://github.com/ingus-t/SmogDetection </br>
@@ -85,24 +85,19 @@ https://github.com/SayedMaheen/sg_PlanetEarth </br>
 
 ## Screenshots from the User Interface:
 
-**'Smog' Detection**
-
+**'Smog' Detection**  
 ![](screenshots/Capture.JPG)
 
-
-
-**'Clear' Detection**
-
+**'Clear' Detection**  
 ![](screenshots/Capture1.JPG)
-
 
 ## PART 2: TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
 
 This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
 
-**Input to model:**
-> Images captured by traffic cameras.
-**Output from model :** 
+**Input to model:**  
+Images captured by traffic cameras.
+**Output from model :**  
 > Prediction as label '0'(clear view) or '1'(smog detected).
 
 ### Data Augmentations and Transformations
@@ -153,10 +148,9 @@ Let's go through them one by one:
 
 **Dropout has been applied in conv4 and linear layer where probability = 0.35 in conv4 and 0.5 in fc.**
 
-###Activation functions:
-[mish](https://github.com/digantamisra98/Mish/blob/master/Mish/Torch/mish.py) activation has been used.
-Activation Mila (@Diganta's new activation)
-[mila](https://github.com/digantamisra98/Mila)
+### Activation functions:
+[Mish](https://github.com/digantamisra98/Mish) activation has been used.  
+[Mila](https://github.com/digantamisra98/Mila) activation has been used.
 
 ### Optimizer : 
 [Adam](https://pytorch.org/docs/stable/_modules/torch/optim/adam.html) optimizer is used here.
@@ -164,11 +158,11 @@ Activation Mila (@Diganta's new activation)
 ### Loss function : 
 [CrossEntropyLoss](https://pytorch.org/docs/stable/_modules/torch/nn/modules/loss.html) is used.
 
-## Learning rate (with lr scheduler) :
+### Learning rate (with lr scheduler) :
 * lr schedular = StepLR(optimizer, step_size=10, gamma=0.5)
 * lr = 0.001
 
-## Epochs : 
+### Epochs : 
 epoch : 50
 
 
@@ -188,21 +182,19 @@ Accuracy: 99.0000
 ### Overall testing accuracy : 
 Test Accuracy (Overall): 98% (767/775)
 
-We have decided to create a user-friendly web app so everyone can test and experiment with our project. We hope that this will be useful for any road-alerts related project that may require such a smog detection/classification facility. 
-
-**Screenshots from the UI:**
+We decided to create a user-friendly web app so everyone can test and experiment with our project. We hope that this will be useful for any road-alerts related project that may require such a smog detection/classification facility. 
 
 Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection)
 
 ## PART 3: TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
 
 ### Description
-* Libraries used: keras 2.2.4, numpy, matplotlib etc
-* Trained: On google Colab
-* Dataset Used: Smog4000 
+* Libraries used: keras 2.2.4, numpy, matplotlib
+* Trained: on google Colab
+* Dataset Used: [Smog4000](https://www.kaggle.com/berenice18/smog4000)
 
 ### About dataset:
-Smog4000 dataset created by our team. 
+Smog4000 dataset was created by our team. 
 
 ### Preprocessing of data
 * Rescale range: 1./255
