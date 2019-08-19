@@ -1,20 +1,22 @@
 # Smog Detection Project
 
-A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.
+A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
+Web app that displays our model in action can be seen here: [https://smog4000.onrender.com/](https://smog4000.onrender.com/)
 
-## PART 1: PROJECT SUMMARY-
+___
+## Part 1: Project summary
 
 ### Description:
 Smog Detection project has been created as a collaborative team effort between 
-Facebook Secure and Private AI Scholars on #sg_planetearth. Main focus of the group is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently our team is focusing on Smog and Fog detection on highways.</br>
+Facebook Secure and Private AI Scholars on #sg_planetearth. The main focus of the group is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently, our team is focusing on Smog and Fog detection on highways.</br>
 
 ### Why is it important? Why should we care?
-Sudden appearance of smog and/or fog on the highway more often than not cause serious and sometimes fatal accidents. Smog is a main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br> 
+The sudden appearance of smog and/or fog on the highway more often than not causes serious and sometimes fatal accidents. Smog is the main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br> 
 
 ### Solution:
-Monitoring, early smog detection and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send notification in a timely manner. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br>
+Monitoring, early smog detection and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send a notification promptly. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br>
 
-In any practical situation, there are other components that need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block camera view. To identify the range of vision sensors need to be added to the solution.</br>
+In any practical situation, other components need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block camera view. To identify the range of vision sensors need to be added to the solution.</br>
 
 ### Our approach:
 There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main cathegories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br>
@@ -28,16 +30,17 @@ Since inception, people in the group have taken their task most seriously. They 
 ![DataSet2](https://user-images.githubusercontent.com/7014697/63082090-272ef100-befa-11e9-8d7a-2296e22aa7c3.JPG)
 
 ### Rules and regulations for selecting pictures:
-- Only Highways or streets
-- Avoid large quantity of people
-- Avoid traffic accidents
-- Avoid night pictures
-- Avoid bird's-eye view
-- Avoid images that are copyrighted or have a watermark
-- Acceptable image formats: jpg, jpeg, png, jfif, webp</br>
+- Images need to have a view of highways or streets;
+- Avoid large quantity of people;
+- Avoid traffic accidents;
+- Avoid night pictures;
+- Avoid bird's-eye view;
+- Avoid images that are copyrighted or have a watermark;
+- Acceptable image formats: jpg, jpeg, png, jfif, webp.  
 
-* Synthetic images we used were taken from [https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) </br>
-* To detect and remove duplicates (regardless of format and resolution), we were using [https://dupeguru.voltaicideas.net/](https://dupeguru.voltaicideas.net/). It is a nice and simplen Open Source tool that works across different platforms (Linux, OS X, Windows).</br>
+Notes:
+- Synthetic images we used were taken from [SFSU synthetic dataset](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)
+- To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is a simple open source tool for duplicate detection that works across different platforms (Linux, OS X, Windows).
 
 ### Contributors:
 1. @Shudipto Trafder
@@ -73,12 +76,12 @@ Since inception, people in the group have taken their task most seriously. They 
 |07/25/19       | 2nd batch of images uploaded (20 for Clear and 20 for Smog folder)     |   
 |07/24/19       | 1st batch of images uploaded (20 for Clear and 20 for Smog folder)     | 
 
-**More information about our data gathering process:**
-https://github.com/SayedMaheen/SmogDetection</br> 
-https://github.com/SayedMaheen/PlanetEarth </br>
-https://github.com/ingus-t/SmogDetection </br>
-https://github.com/ingus-t/SmogDetectionCombined </br>
-https://github.com/SayedMaheen/sg_PlanetEarth </br>
+**More information about our data gathering process:**  
+https://github.com/SayedMaheen/SmogDetection   
+https://github.com/SayedMaheen/PlanetEarth  
+https://github.com/ingus-t/SmogDetection  
+https://github.com/ingus-t/SmogDetectionCombined  
+https://github.com/SayedMaheen/sg_PlanetEarth  
 ****************************************************************************************************************************************
 
 **_Check out this exclusive web-app we have deployed for our project at https://smog4000.onrender.com/. At this site, you can upload your Smog/Clear images and test the accuracy of our classification system._**
@@ -91,12 +94,14 @@ https://github.com/SayedMaheen/sg_PlanetEarth </br>
 **'Clear' Detection**  
 ![](screenshots/Capture1.JPG)
 
-## PART 2: TECHNICAL SUMMARY OF FINAL IMPLEMENTATION WITH PYTORCH-
+___
+# Part 2: Implementation with PyTorch
 
-This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.
+This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.  
+Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection).
 
 **Input to model:**  
-Images captured by traffic cameras.
+Images captured by traffic cameras.  
 **Output from model :**  
 > Prediction as label '0'(clear view) or '1'(smog detected).
 
@@ -184,14 +189,14 @@ Test Accuracy (Overall): 98% (767/775)
 
 We decided to create a user-friendly web app so everyone can test and experiment with our project. We hope that this will be useful for any road-alerts related project that may require such a smog detection/classification facility. 
 
-Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection)
-
-## PART 3: TECHNICAL SUMMARY OF IMPLEMENTATION WITH KERAS:
+___
+# Part 3: Implementation with KERAS:
 
 ### Description
 * Libraries used: keras 2.2.4, numpy, matplotlib
 * Trained: on google Colab
 * Dataset Used: [Smog4000](https://www.kaggle.com/berenice18/smog4000)
+* Find the notebook for this implementation [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
 
 ### About dataset:
 Smog4000 dataset was created by our team. 
@@ -206,7 +211,7 @@ Smog4000 dataset was created by our team.
 Custom CNN model is used here. Complete summary of model architecture is given below:
 <img src = 'https://github.com/q-viper/SmogDetection/blob/master/Smog4000/Assets/model.JPG'>
 <br/>
-The Sequential model have 3 blocks of CNN layers and one final linear layer. In each CNN block we have:
+The Sequential model has 3 blocks of CNN layers and one final linear layer. In each CNN block we have:
 * Convolution layers of same out filters(32, 32, 64, 64, 128, 128)
 * Filter shape: (3, 3)
 * Activation Function: relu(Rectified Linear Unit)
@@ -241,5 +246,3 @@ The Final block is for linear layers. It has:
 ### Future Implementations:
 * Usage of less parameters
 * Test with different optimizer and loss functions
-
-### Find the notebook for this implementation [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
