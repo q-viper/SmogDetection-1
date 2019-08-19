@@ -13,23 +13,24 @@ Facebook Secure and Private AI Scholars on #sg_planetearth. The main focus of th
 ### Why is it important? Why should we care?
 The sudden appearance of smog and/or fog on the highway more often than not causes serious and sometimes fatal accidents. Smog is the main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br> 
 
-### Solution:
+### Solution
 Monitoring, early smog detection and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send a notification promptly. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br>
 
 In any practical situation, other components need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block camera view. To identify the range of vision sensors need to be added to the solution.</br>
 
-### Our approach:
+### Our approach
 There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main cathegories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br>
 
-### Project objective:
-Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads. The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cams, so that the vehicle can automatically be alerted about smog on the roads/streets (highways) be it in heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert the vehicle / driver.</br> 
+### Project objective
+Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads.  
+**The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
 
-### Dataset:
+### Dataset
 Since inception, people in the group have taken their task most seriously. They contributed towards building unique dataset which now has more than 4,000 images divided evenly between above-mentioned two groups. Our collection consists of:</br>
 ![DataSet1](https://user-images.githubusercontent.com/7014697/63082087-25652d80-befa-11e9-9ccd-f49b5476010f.JPG)
 ![DataSet2](https://user-images.githubusercontent.com/7014697/63082090-272ef100-befa-11e9-8d7a-2296e22aa7c3.JPG)
 
-### Rules and regulations for selecting pictures:
+### Rules and regulations for selecting pictures
 - Images need to have a view of highways or streets;
 - Avoid large quantity of people;
 - Avoid traffic accidents;
@@ -98,7 +99,7 @@ ___
 # Part 2: Implementation with PyTorch
 
 This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.  
-Find the notebook for this implementation [here](https://www.kaggle.com/berenice18/smogdetection).
+[Find the notebook for this implementation here](https://www.kaggle.com/berenice18/smogdetection).
 
 **Input to model:**  
 Images captured by traffic cameras.  
@@ -170,9 +171,7 @@ Let's go through them one by one:
 ### Epochs : 
 epoch : 50
 
-
 ## RESULTS
-
 
 ### Test loss :
 Test Loss:36.734721 
@@ -196,10 +195,10 @@ ___
 * Libraries used: keras 2.2.4, numpy, matplotlib
 * Trained: on google Colab
 * Dataset Used: [Smog4000](https://www.kaggle.com/berenice18/smog4000)
-* Find the notebook for this implementation [here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
+* [Find the notebook for this implementation here](https://github.com/q-viper/SmogDetection/blob/master/Smog4000/keras_Smog4000.ipynb). 
 
 ### About dataset:
-Smog4000 dataset was created by our team. 
+[Smog4000](https://www.kaggle.com/berenice18/smog4000) dataset was created by our team. 
 
 ### Preprocessing of data
 * Rescale range: 1./255
