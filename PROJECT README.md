@@ -1,13 +1,13 @@
 # Smog Detection Project
 
 A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
-**_Check out our  web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._** Although it works on all images, you can get best results on highway images.
+**_Check out our web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._** Although it works on all images, you can get the best results on highway images.
 ___
 ## Part 1: Project summary
 
 ### Description:
 Smog Detection project has been created as a collaborative team effort between 
-Facebook Secure and Private AI Scholars on #sg_planetearth. The main focus of the group is to provide Deep Learning solutions to solve most concerning real world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently, our team is focusing on Smog and Fog detection on highways.</br>
+Facebook Secure and Private AI Scholars on #sg_planetearth. The main focus of the group is to provide Deep Learning solutions to solve most concerning real-world problems, such as Climate Change, Food Security, Plastic Pollution, Deep Fake, Oceanic Pollution, Industrial Nuclear Waste, Clean Energy and more(using AI for social good). Currently, our team is focusing on Smog and Fog detection on highways.</br>
 
 ### Why is it important? Why should we care?
 The sudden appearance of smog and/or fog on the highway more often than not causes serious and sometimes fatal accidents. Smog is the main agent for severe air pollution. It can aggravate health problems including problems with breathing and sleeping, as well as it can inversely damage plants and forest cover.</br> 
@@ -15,17 +15,17 @@ The sudden appearance of smog and/or fog on the highway more often than not caus
 ### Solution
 Monitoring, early smog detection, and preventive action. By using traffic cameras and train a model to recognize the smog/fog patterns, we can automate the alert and send a notification promptly. When smog/fog appears, the system notifies drivers who are within specified range about an upcoming “obstacle”. </br>
 
-In any practical situation, other components need to be taken into consideration as well. For example, presence of flying birds and any type of material that will block the camera view. To identify the range of vision sensors need to be added to the solution.</br>
+In any practical situation, other components need to be taken into consideration as well. For example, the presence of flying birds and any type of material that will block the camera view. To identify the range of vision sensors need to be added to the solution.</br>
 
 ### Our approach
 There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main categories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br>
 
 ### Project objective
 Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads.  
-**The primary goal of the project is to avoid and help reduce rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic in order to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
+**The primary goal of the project is to avoid and help reduce the rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
 
 ### Dataset
-Since inception, people in the group have taken their task most seriously. They contributed towards building unique dataset which now has more than 4,000 images divided evenly between above-mentioned two groups. Our collection consists of:</br>
+Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above. Our collection consists of:</br>
 ![DataSet1](https://user-images.githubusercontent.com/7014697/63082087-25652d80-befa-11e9-9ccd-f49b5476010f.JPG)
 ![DataSet2](https://user-images.githubusercontent.com/7014697/63082090-272ef100-befa-11e9-8d7a-2296e22aa7c3.JPG)
 
@@ -40,7 +40,7 @@ Since inception, people in the group have taken their task most seriously. They 
 
 Notes:
 - Synthetic images we used were taken from [SFSU synthetic dataset](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)
-- To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is a simple open source tool for duplicate detection that works across different platforms (Linux, OS X, Windows).
+- To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is an open-source tool for duplicate image detection that works across different platforms (Linux, OS X, Windows).
 
 ### Contributors:
 
@@ -70,7 +70,7 @@ No | Name | Slack Handle
 ___
 # Part 2: Implementation with PyTorch
 
-This is a descriptive summary of Model Architecture we have implemented, and the Data Augmentations we have applied.  
+This is a descriptive summary of the Model Architecture we have implemented, and the Data Augmentations we have applied.  
 [Find the notebook for this implementation here](https://www.kaggle.com/berenice18/smogdetection).
 
 **Input to model:**  
@@ -91,7 +91,7 @@ Prediction as label '0'(clear view) or '1'(smog detected).
 ### Model name 
 * [planetEarch_improved.pt](https://www.kaggleusercontent.com/kf/18699045/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..NX3MZVkixkhASIBsP-e0uA.SplTd0njipbzC_x4mF-HsOJiU8ca2ycipZNQ_dxpuzJfhezWWHeE7BGL0JnQ1Ni8xh3YmdWUNubsC-pYVTr20wMeCYV-2Paqe4OvtPCNzpXuAHX23oQF-d5YK6x7ruPPm-7vBTCHvKGQzDW9ZuMXPg.FT_NpgWhdVu3GQnSQzaCJQ/planetEarch_improved.pt)
 
-### Description of model 
+### Description of the model 
 There are five modules which contain deeper sublayers.
 Let's go through them one by one:
 
@@ -214,7 +214,7 @@ The Final block is for linear layers. It has:
 * Train time: 750 seconds per epoch
 
 ### Future Implementations:
-* Usage of less parameters
+* Using fewer parameters
 * Test with different optimizer and loss functions
 
 ## Application of Secure & Private AI in this project
