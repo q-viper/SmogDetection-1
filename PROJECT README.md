@@ -22,7 +22,7 @@ There are plenty of existing solutions and advancements in computer vision. Our 
 
 ### Project objective
 Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads.  
-**The primary goal of the project is to avoid and help reduce the rate of accidents in self driving vehicles by using this classifier model as one of the key components attached on traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic to adjust it's dynamics like speed, steering rotation, lanes etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
+**The primary goal of the project is to avoid and help reduce the rate of accidents in self-driving vehicles. That can be achieved by using this classifier model as one of the key components attached to traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic to adjust it's dynamics like speed, steering rotation, lanes, etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
 
 ### Dataset
 Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above. Our collection consists of:</br>
@@ -31,7 +31,7 @@ Since inception, people in the group have taken their task most seriously. They 
 
 ### Rules and regulations for selecting pictures
 - Images need to have a view of highways or streets;
-- Avoid large quantity of people;
+- Avoid a large quantity of people;
 - Avoid traffic accidents;
 - Avoid night pictures;
 - Avoid bird's-eye view;
@@ -92,7 +92,7 @@ Prediction as label '0'(clear view) or '1'(smog detected).
 *[model.pt](https://www.kaggleusercontent.com/kf/18699045/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..NV6L2pV_K0u5eS5JKcovWg.dESzIjhRmqdZvcrYJfWc0PEm1naJnTT7yU1E7IgRn7awT7yClc4NMtb5YCbWr_IlYpz5ZdbEs2sM9aKKpu2W3hgkilV2jo3AYjxI3lTCKe4nt25kA5dvh0lq4qw8cPDiYKz6ROFWKnnl9yd_Fw12dQ.Mb5NRyZispSEz3dY5gs7dA/model.pt)
 
 ### Description of the model 
-There are five modules which contain deeper sublayers.
+There are five modules that contain deeper sublayers.
 Let's go through them one by one:
 
 * CNN layers : 7 
@@ -184,14 +184,14 @@ Custom CNN model is used here. Complete summary of model architecture is given b
 The Sequential model has 3 blocks of CNN layers and one final linear layer. In each CNN block we have:
 * Convolution layers of same out filters(32, 32, 64, 64, 128, 128)
 * Filter shape: (3, 3)
-* Activation Function: relu(Rectified Linear Unit)
+* Activation Function: ReLU(Rectified Linear Unit)
 * MaxPooling: pool size(3, 3)
 * BatchNormalization
 * Dropout: 0.25
 
 The Final block is for linear layers. It has:
 * Flatten
-* Dense of out 256 and relu
+* Dense of out 256 and ReLU
 * BatchNormalization
 * Dropout of 0.5
 * Classification layer with sigmoid
