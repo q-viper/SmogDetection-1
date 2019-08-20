@@ -89,7 +89,7 @@ Prediction as label '0'(clear view) or '1'(smog detected).
 * [transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
         
 ### Model name 
-* [planetEarch_improved.pt](https://www.kaggleusercontent.com/kf/18699045/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..NX3MZVkixkhASIBsP-e0uA.SplTd0njipbzC_x4mF-HsOJiU8ca2ycipZNQ_dxpuzJfhezWWHeE7BGL0JnQ1Ni8xh3YmdWUNubsC-pYVTr20wMeCYV-2Paqe4OvtPCNzpXuAHX23oQF-d5YK6x7ruPPm-7vBTCHvKGQzDW9ZuMXPg.FT_NpgWhdVu3GQnSQzaCJQ/planetEarch_improved.pt)
+*[model.pt](https://www.kaggleusercontent.com/kf/18699045/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..NV6L2pV_K0u5eS5JKcovWg.dESzIjhRmqdZvcrYJfWc0PEm1naJnTT7yU1E7IgRn7awT7yClc4NMtb5YCbWr_IlYpz5ZdbEs2sM9aKKpu2W3hgkilV2jo3AYjxI3lTCKe4nt25kA5dvh0lq4qw8cPDiYKz6ROFWKnnl9yd_Fw12dQ.Mb5NRyZispSEz3dY5gs7dA/model.pt)
 
 ### Description of the model 
 There are five modules which contain deeper sublayers.
