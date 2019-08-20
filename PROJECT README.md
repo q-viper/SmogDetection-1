@@ -144,8 +144,10 @@ epoch : 50
 
 ## RESULTS
 
+![](screenshots/PT_train_test_loss_plot.png)
+
 ### Test loss :
-Test Loss:36.734721 
+Test Loss: 36.734721 
 
 ### Test Accuracy :
 Accuracy: 99.0000
@@ -196,7 +198,7 @@ The Final block is for linear layers. It has:
 * Dropout of 0.5
 * Classification layer with sigmoid
 
-* Total parameters: 1,469,346
+Total parameters: 1,469,346
 
 ### Model Compilation
 * Optimizer: Adam(Adaptive Momentum) Optimizer is used on this model.
@@ -204,7 +206,7 @@ The Final block is for linear layers. It has:
 * Loss function: Categorical_crossentropy (categories: clear, smog)
 
 ### Training
-* Epochs:  10
+* Epochs: 10
 * Batch Size: 32
 
 ### Performance
